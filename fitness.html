@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="images/fitness logo 5.png" alt="" class="image">
+            </div>
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="main">
+                <div class="navbar-links" id="navbar-links">
+                    <ul>
+                        <li><a href="fitness.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <div class="login-link">
+                            <button class="login_button">join us</button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="login">
+                    <button class="login_button">join us</button>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="title">
+                        <span class="close">&times;</span>
+                        <div class="title-text1">
+                            <label class="title-text">SUBSCRIPTION PLAN</label>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="subContainer">
+                            <div class="formContent">
+                                <label for="" class="formLabel">Full Name: </label>
+                                <input type="text" placeholder="Enter full name" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Email: </label>
+                                <input type="email" placeholder="Enter your email" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Mobile Number: </label>
+                                <input type="phone" placeholder="Enter mobile number" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Duration: </label>
+                                <div class="periodBox">
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Monthly</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Yearly</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Mode of Payment: </label>
+                                <div class="periodBox">
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Cash</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Online</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Personal Training: </label>
+                                <div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Required</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Not Required</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" style="height: 25px;width:25px">
+                                <label for="" class="condition">I accept all terms and conditions
+                                    provided in this form.</label>
+                            </div>
+                            <div class="buttonBox">
+                                <button class="submitButton">BUY PLAN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add your form or content here -->
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="page1">
+        <div style="max-width:506px;width: 100%;text-align: center; margin-top: 50px;">
+            <label for="" class="page1Title">Revitalize your body</label>
+        </div>
+        <div class="page1ParagraphBox">
+            <p class="page1Paragraph">Fall in love with taking care of yourself: mind, body, and spirit.</p>
+        </div>
+        <div class="page1ButtonBox">
+            <button class="page1Button">Get Started</button>
+            <button class="page1Button">Free Trial -></button>
+        </div>
+    </div>
+    <div class="box">
+       <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> 
+       <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+       <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="page2">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 gridBox">
+                    <img src="images/Rectangle 139.png" alt="" style="max-width: 150px; width: 100%;">
+                    <p class="gridText">Weight Loss</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 gridBox">
+                    <img src="images/Rectangle 140.png" alt=""
+                        style="max-width: 150px;max-height:140px;height: 100%; width: 100%;">
+                    <p class="gridText">Classic Yoga</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 gridBox gridBox1">
+                    <img src="images/Rectangle 143.png" alt="" style="max-width: 150px; width: 100%;">
+                    <p class="gridText">Cycling</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 gridBox gridBox2">
+                    <img src="images/Rectangle 141.png" alt="" style="max-width: 150px; width: 100%;">
+                    <p class="gridText">Bodybuilding</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 gridBox gridBox2">
+                    <img src="images/Rectangle 142.png" alt="" style="max-width: 150px; width: 100%;">
+                    <p class="gridText">Hypertrophy</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 gridBox gridBox2 gridBox1">
+                    <img src="images/Rectangle 144.png" alt="" style="max-width: 150px; width: 100%;">
+                    <p class="gridText">Running</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page3">
+        <p class="page3Title">Subscription Plans</p>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="page3Grid">
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">Basic</label>
+                            <label class="page3Text">for 12 months</label>
+                        </div>
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">800/month</label>
+                            <label class="page3Text">for streaming</label>
+                        </div>
+                        <div style="text-align: center;">
+                            <button class="page1Button">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class=" page3Grid">
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">Intermediate</label>
+                            <label class="page3Text">for 12 months</label>
+                        </div>
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">1000/month</label>
+                            <label class="page3Text">for streaming</label>
+                        </div>
+                        <div style="text-align: center;">
+                            <button class="page1Button">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class=" page3Grid">
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">Advanced</label>
+                            <label class="page3Text">for 12 months</label>
+                        </div>
+                        <div style="display: flex;flex-direction: column;">
+                            <label class="page3Head">1500/month</label>
+                            <label class="page3Text">for streaming</label>
+                        </div>
+                        <div style="text-align: center;">
+                            <button class="page1Button">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="images/Rectangle 145.png" width="100%" height="auto" alt="">
+        <div class="page4">
+            <div class="page4main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="page4grid">
+                                <div style="text-align: center;">
+                                    <img src="images/gm 1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="page4gridText1">Good Management</p>
+                                    <p class="page4gridText2">What hurts today makes you stronger tomorrow</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="page4grid">
+                                <div style="text-align: center;">
+                                    <img src="images/ps1 1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="page4gridText1">Practice Sessions</p>
+                                    <p class="page4gridText2">Motivation is what gets you started.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="page4grid">
+                                <div style="text-align: center;">
+                                    <img src="images/ft2 1.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="page4gridText1">Personal Trainers</p>
+                                    <p class="page4gridText2">If it doesn't challenge you, it won't change you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4 page5grid">
+                    <div>
+                        <img src="images/Rectangle 148.png" width="100%" alt="">
+                    </div>
+                    <p class="page5paragraph">Best place for body transformation</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 page5grid">
+                    <div>
+                        <img src="images/Rectangle 149.png" width="100%" alt="">
+                    </div>
+                    <p class="page5paragraph">Best Cross Fit gym in this area</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 page5grid">
+                    <div>
+                        <img src="images/Rectangle 150.png" width="100%" alt="">
+                    </div>
+                    <p class="page5paragraph">Best Bodybuilding gym in this city it has all required equipment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footerMain">
+        <div>
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4 footerGrid">
+                    <div style="text-align: center;"><img src="images/fitness logo 5.png" height="50px" width="200px"
+                            alt=""></div>
+                    <p class="footerText">Prioritize Your Fitness Goals with our world class services</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerFunctionBox footerGrid">
+                    <div>
+                        <p class="footerFunction">COMPANY</p>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Blogs</li>
+                    </div>
+                    <div>
+                        <p class="footerFunction">CONTACT</p>
+                        <li>Help/FAQs</li>
+                        <li>Press</li>
+                        <li>Mobile</li>
+                    </div>
+                    <div>
+                        <p class="footerFunction">MORE</p>
+                        <li>Program</li>
+                        <li>Plans</li>
+                        <li>Method</li>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerGrid">
+                    <p class="footerText" style="text-align: center;"><u>Popular Tags</u></p>
+                    <div class="buttonsBox">
+                        <button class="footerButton" style="background-color: #8D8383;">ABS</button>
+                        <button class="footerButton" style="background-color: #8D8383;">Workout</button>
+                        <button class="footerButton">Nutrition</button>
+                        <button class="footerButton" style="background-color: #8D8383;">GYM</button>
+                        <button class="footerButton" style="background-color: #8D8383;">Boxing</button>
+                        <button class="footerButton">Trainers</button>
+                        <button class="footerButton">Facilities</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <div class="footerEndBox">
+        <p class="footerEndText">CopyRight All Rights Reserved</p>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

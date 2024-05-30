@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <title>Document</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="images/fitness logo 5.png" alt="" class="image">
+            </div>
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="main">
+                <div class="navbar-links" id="navbar-links">
+                    <ul>
+                        <li><a href="fitness.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <div class="login-link">
+                            <button class="login_button">join us</button>
+                        </div>
+                    </ul>
+                </div>
+                <div class="login">
+                    <button class="login_button">join us</button>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="title">
+                        <span class="close">&times;</span>
+                        <div class="title-text1">
+                            <label class="title-text">SUBSCRIPTION PLAN</label>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="subContainer">
+                            <div class="formContent">
+                                <label for="" class="formLabel">Full Name: </label>
+                                <input type="text" placeholder="Enter full name" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Email: </label>
+                                <input type="email" placeholder="Enter your email" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Mobile Number: </label>
+                                <input type="phone" placeholder="Enter mobile number" class="formInput">
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Duration: </label>
+                                <div class="periodBox">
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Monthly</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Yearly</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Mode of Payment: </label>
+                                <div class="periodBox">
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Cash</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Online</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formContent">
+                                <label for="" class="formLabel">Personal Training: </label>
+                                <div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Required</label>
+                                    </div>
+                                    <div style="display: flex; gap:10px;">
+                                        <input type="radio" style="height: 25px;width:25px">
+                                        <label for="" class="formLabel">Not Required</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <input type="checkbox" style="height: 25px;width:25px">
+                                <label for="" class="condition">I accept all terms and conditions
+                                    provided in this form.</label>
+                            </div>
+                            <div class="buttonBox">
+                                <button class="submitButton">BUY PLAN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add your form or content here -->
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="classesPage2">
+        <div>
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-md-5 classesPage2Grid">
+                    <div>
+                        <img src="images/Rectangle 133blogs.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 classesPage2Grid"></div>
+                <div class="col-12 col-sm-12 col-md-6 classesPage2Grid">
+                    <div>
+                        <p class="blogPage1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centrelease of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="blogPage2">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-md-6 classesPage2Grid blogPage2Grid">
+                   <p class="blogText">BENEFITS OF A HEALTHY DIET</p>
+                   <li class="blogList">May help you live longer. </li>
+                   <li class="blogList">Keeps skin, teeth, and eyes healthy.</li>
+                   <li class="blogList"> Supports muscles.</li>
+                   <li class="blogList"> Boosts immunity.</li>
+                   <li class="blogList"> Strengthens bones.</li>
+                   <li class="blogList">Supports healthy pregnancies and breastfeeding.</li>
+                   <li class="blogList"> Helps the digestive system function.</li>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 classesPage2Grid" style="padding: 0; margin-top: 0;">
+                        <img src="images/Rectangle 131.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="classesPage2">
+        <div>
+            <div class="row ">
+               
+                <div class="col-12 col-sm-12 col-md-6 classesPage2Grid">
+                    <div>
+                        <p class="blogPage1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centrelease of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 classesPage2Grid"></div>
+                <div class="col-12 col-sm-12 col-md-5 classesPage2Grid">
+                    <div>
+                        <img src="images/Rectangle 134.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <footer class="footerMain">
+        <div>
+            <div class="row justify-content-around">
+                <div class="col-12 col-sm-6 col-md-4 footerGrid">
+                    <div style="text-align: center;"><img src="images/fitness logo 5.png" height="50px" width="200px"
+                            alt=""></div>
+                    <p class="footerText">Prioritize Your Fitness Goals with our world class services</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerFunctionBox footerGrid">
+                    <div>
+                        <p class="footerFunction">COMPANY</p>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Blogs</li>
+                    </div>
+                    <div>
+                        <p class="footerFunction">CONTACT</p>
+                        <li>Help/FAQs</li>
+                        <li>Press</li>
+                        <li>Mobile</li>
+                    </div>
+                    <div>
+                        <p class="footerFunction">MORE</p>
+                        <li>Program</li>
+                        <li>Plans</li>
+                        <li>Method</li>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 footerGrid">
+                    <p class="footerText" style="text-align: center;"><u>Popular Tags</u></p>
+                    <div class="buttonsBox">
+                        <button class="footerButton" style="background-color: #8D8383;">ABS</button>
+                        <button class="footerButton" style="background-color: #8D8383;">Workout</button>
+                        <button class="footerButton">Nutrition</button>
+                        <button class="footerButton" style="background-color: #8D8383;">GYM</button>
+                        <button class="footerButton" style="background-color: #8D8383;">Boxing</button>
+                        <button class="footerButton">Trainers</button>
+                        <button class="footerButton">Facilities</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <div class="footerEndBox">
+        <p class="footerEndText">CopyRight All Rights Reserved</p>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
